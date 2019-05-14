@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***********************
+
+BUTTONS
+
+*********************/
+
+.categories #grab-btn {
+    width: 200px; !important
+    padding: 20px 40px 20px 40px;
+    border: 1px solid #99c2ff;
+    color: #99c2ff;
+    background: white;
+    display: block;
+    float: left;
+}
+
+.checklabel {
+    display:block;
+	width:100%;
+	background:#719fe8;
+    color: white;
+	border-radius:2px;
+	text-align:center;
+	padding:12px 3em;
+	font-size:1.2rem;
+}
+
+.checklabel:hover {
+	background:white;
+    color: #719fe8;
+}
+
+.btn {
+    position:absolute;
+	right:10px;
+	top:15px;
+	width: 2.2em;
+	height: 2.2em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border:none;
+	padding:0;
+	border-radius:0;
+	vertical-align: middle;
+	transition:.3s ease;
+	outline:0;
+}
+
+.btn:active + label {
+	background:white;
+    color: #719fe8;
+}
+.btn:checked + label {
+	background:white;
+    color: #719fe8;
+}
+
+.btn:not(:checked) {
+    background:#719fe8;
+    color: white;
+}

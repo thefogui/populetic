@@ -5,6 +5,48 @@
 {% block content %}
 <link rel="stylesheet" href="/static/css/index.css">
 <div class="mainPage">
-    Hello
+    <div class="row">
+        <div class="col-xs-1" align="center">
+            <h1>FIND THE PERFECT GIFT FOR YOUR</h1>
+        </div><!-- Closing div col-xs-1 -->
+        
+        <div class="col-xs-1 mom-section" align="center">
+            <h2>MOM</h2>
+        </div><!-- Closing div mom-section-->
+    </div>
+
+    <div class="categories">
+        <div class="row">
+            {% for category in categories %}
+                
+                <div class="col-sm">
+                    <input type="checkbox" name="{{category.1}}" id="{{category.1}}" class="btn" value="{{category.1}}" />
+
+                    <label class="checklabel" for="{{category.1}}">
+                        {{category.1}}
+                    </label>
+                </div>
+                
+            {% endfor %}
+        </div>
+        <button type="button" id="grab-btn" class="btn">GRAB AND GO GIFT</button>
+    </div><!-- Closing div categories -->
+    
+    <section>
+        <!-- READ TO LOAD JSON -->
+        <div class="row">
+            {% for gift in gifts %}
+            <div class="col-sm-4" id="{{gift.category}}">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/images/t1.jpg" class="card-img-top" alt="product-image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{gift.description}}</h5>
+                        <p class="card-text">{{gift.price}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
 </div><!-- Closing div mainPage -->
 {% endblock %}

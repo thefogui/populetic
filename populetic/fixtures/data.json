@@ -1,0 +1,32 @@
+[
+    {
+        "model": "populetic.Gift",
+        "pk": 1,
+        "fields": {
+            "gift_number" :"123A",
+            "description" :"ADD SOME LOVE",
+            "price" : "1488",
+            "category" : "Family"
+        }
+    },
+    {
+        "model": "populetic.Gift",
+        "pk": 2,
+        "fields": {
+            "gift_number" :"123B",
+            "description" :"ADD SOME LOVE",
+            "price" : "1488",
+            "category" : "Love"
+        }
+    },
+    {
+        "model": "populetic.Gift",
+        "pk": 3,
+        "fields": {
+            "gift_number" :"123C",
+            "description" :"ADD SOME LOVE",
+            "price" : "1488",
+            "category" : "Faith"
+        }
+    }
+]
